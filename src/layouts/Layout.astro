@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+const { title = "Zomsi", description = "Zomsi builds simple, focused apps for everyday life." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{title}</title>
+</head>
+<body>
+<header class="nav-shell">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">Z</span><span>Zomsi</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/apps">Apps</a><a href="/about">About</a><a href="/contact">Contact</a><a href="/rummyscore/support">Support</a>
+    </nav>
+    <a class="button secondary" href="/apps">Explore Apps</a>
+  </div>
+</header>
+<slot />
+<footer class="footer">
+  <div class="container footer-row">
+    <div><strong>Zomsi</strong><br /><span>Zomsi Info Tech Private Limited</span></div>
+    <div class="footer-links"><a href="/apps">Apps</a><a href="/about">About</a><a href="/contact">Contact</a><a href="/rummyscore/privacy">Privacy</a><a href="/rummyscore/support">Support</a></div>
+    <div>© 2026 Zomsi. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
