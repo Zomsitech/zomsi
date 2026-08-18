@@ -5,6 +5,10 @@ import Layout from "../layouts/Layout.astro";
 <main class="section"><div class="container">
   <span class="eyebrow">Contact</span><h1 style="font-size:clamp(2.8rem,6vw,5rem);margin-top:18px">Get in touch.</h1>
   <p class="lead">Questions about a Zomsi product, support, or business inquiries are welcome.</p>
-  <div class="card" style="max-width:720px"><h3>General contact</h3><p style="color:var(--muted)">For support, feedback, or business inquiries, reach us at:</p><a class="button primary" href="mailto:support@zomsi.co">support@zomsi.co</a></div>
+  <div class="grid" style="margin-top:0">
+    <div class="card" style="grid-column:span 6"><h3>General contact</h3><p style="color:var(--muted)">For support, feedback, or business inquiries, reach us at:</p><a class="button primary" href="mailto:support@zomsi.co">support@zomsi.co</a></div>
+    <div class="card" style="grid-column:span 6"><h3>Registered office</h3><address style="font-style:normal;color:var(--muted);line-height:1.7">Zomsi Info Tech Private Limited<br />Plot No 284, Road No 4, Phase-II,<br />NJR KLR Nagar, Medchal,<br />Telangana, 501401<br />Tel: <a href="tel:+919573682102">+91 95736 82102</a></address><p style="margin:14px 0 0"><a href="mailto:contact@zomsi.co">contact@zomsi.co</a></p></div>
+  </div>
+  <style>@media(max-width:800px){.card[style*="span 6"]{grid-column:span 12!important}}</style>
 </div></main>
 </Layout>
