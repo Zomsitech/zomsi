@@ -1,15 +1,21 @@
 ---
-import RummyScoreLayout from "../../layouts/RummyScoreLayout.astro";
+import "../../styles/global.css";
+const dest = "https://rummyscore.zomsi.co/support";
 ---
-<RummyScoreLayout title="Rummy Score Support — Zomsi" description="Support for Rummy Score.">
-<main class="section"><div class="container legal-copy">
-<span class="eyebrow">Rummy Score support</span><h1 style="font-size:clamp(2.7rem,6vw,4.8rem);margin-top:18px">How can we help?</h1>
-<p class="lead">For support, include your device model, operating system version, Rummy Score version, a description of the issue, and steps to reproduce it when possible.</p>
-<div class="card"><h3>Contact support</h3><p style="color:var(--muted)">Email us at:</p><a class="button primary" href="mailto:contact@zomsi.co">contact@zomsi.co</a></div>
-<h2>Frequently asked questions</h2><h3>Does Rummy Score require an internet connection?</h3><p>Core scorekeeping is designed to work without requiring an internet connection.</p>
-<h3>What type of Rummy does it support?</h3><p>Rummy Score is designed primarily for Indian Rummy scorekeeping.</p>
-<h3>Can scoring values be customized?</h3><p>Yes. Game settings can include configurable Target Score, Middle Drop, Wrong Show, and Full Count values.</p>
-<h3>Does Rummy Score support real-money gaming?</h3><p>No. Rummy Score is a scorekeeping utility only and does not provide gambling, betting, wagering, or cash gameplay.</p>
-<h2>General support</h2><p>This page covers Rummy Score specifically. For general questions about Zomsi or this website, see <a href="/support">Zomsi Support</a>.</p>
-</div></main>
-</RummyScoreLayout>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="refresh" content={`0; url=${dest}`} />
+  <link rel="canonical" href={dest} />
+  <title>Rummy Score Support has moved — Zomsi</title>
+</head>
+<body>
+  <main class="section"><div class="container legal-copy">
+    <span class="eyebrow">Rummy Score support</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);margin-top:18px">This page has moved</h1>
+    <p class="lead">Rummy Score Support now lives at its own address. Redirecting you now — if nothing happens, <a href={dest}>continue to {dest}</a>.</p>
+  </div></main>
+</body>
+</html>
