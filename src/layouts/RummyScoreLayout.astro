@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+const { title = "Rummy Score", description = "Rummy Score is a simple scorekeeper for Indian Rummy games with friends and family." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/png" href="/icons/rummyscore-icon.png" />
+  <title>{title}</title>
+</head>
+<body>
+<header class="nav-shell">
+  <div class="container nav">
+    <a class="brand" href="/rummyscore"><img class="brand-mark store" src="/icons/rummyscore-icon-playstore.png" alt="" width="48" height="48" /><span>Rummy Score</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/rummyscore">Home</a><a href="/rummyscore/support">Support</a><a href="/rummyscore/privacy">Privacy</a><a href="/">By Zomsi</a>
+    </nav>
+    <a class="button secondary" href="/rummyscore#download">Get the app</a>
+  </div>
+</header>
+<slot />
+<footer class="footer">
+  <div class="container footer-row">
+    <div><strong>Rummy Score</strong><br /><span>An app by Zomsi Info Tech Private Limited</span></div>
+    <div class="footer-links"><a href="/rummyscore">Home</a><a href="/rummyscore/support">Support</a><a href="/rummyscore/privacy">Privacy</a><a href="/">zomsi.co</a></div>
+    <div>© 2026 Zomsi. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

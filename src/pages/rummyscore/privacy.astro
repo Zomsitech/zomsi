@@ -1,21 +1,16 @@
 ---
-import "../../styles/global.css";
-const dest = "https://rummyscore.zomsi.co/privacy";
+import RummyScoreLayout from "../../layouts/RummyScoreLayout.astro";
 ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta http-equiv="refresh" content={`0; url=${dest}`} />
-  <link rel="canonical" href={dest} />
-  <title>Rummy Score Privacy Policy has moved — Zomsi</title>
-</head>
-<body>
-  <main class="section"><div class="container legal-copy">
-    <span class="eyebrow">Rummy Score privacy</span>
-    <h1 style="font-size:clamp(2.2rem,5vw,3.5rem);margin-top:18px">This page has moved</h1>
-    <p class="lead">The Rummy Score Privacy Policy now lives at its own address. Redirecting you now — if nothing happens, <a href={dest}>continue to {dest}</a>.</p>
-  </div></main>
-</body>
-</html>
+<RummyScoreLayout title="Rummy Score Privacy Policy — Zomsi" description="Privacy Policy for Rummy Score.">
+<main class="section"><div class="container legal-copy">
+<span class="eyebrow">Rummy Score privacy</span><h1 style="font-size:clamp(2.7rem,6vw,4.8rem);margin-top:18px">Privacy Policy</h1><p class="lead">Last updated: August 17, 2026</p>
+<h2>Overview</h2><p>Rummy Score is designed to minimize data collection and provide scorekeeping functionality with as little personal information as possible.</p>
+<h2>Game data</h2><p>Rummy Score may store game-related information such as player names, game settings, scores, and game history. Depending on the version and enabled features, this data may be stored locally on your device and may also be synchronized to a backend service for features such as backup or cross-device access.</p>
+<h2>Analytics and crash reporting</h2><p>Rummy Score may use analytics and crash-reporting services to understand app usage, diagnose technical problems, and improve reliability. We aim to avoid sending unnecessary personal information in analytics events or crash reports.</p>
+<h2>Information not required for core scorekeeping</h2><ul><li>Precise location</li><li>Contacts</li><li>Real-money payment information</li></ul>
+<h2>Children's privacy</h2><p>Rummy Score is intended as a general scorekeeping utility. It is not designed to collect personal information from children for advertising or profiling.</p>
+<h2>Changes to this policy</h2><p>This policy may be updated as Rummy Score features or data practices change. The latest version will always be published on this page.</p>
+<h2>Contact</h2><p>Questions about privacy can be sent to <a href="mailto:contact@zomsi.co"><strong>contact@zomsi.co</strong></a>.</p>
+<h2>Company website</h2><p>This policy covers only the Rummy Score app. For the Zomsi website and company-level privacy practices, see the <a href="/privacy">Zomsi Privacy Policy</a>.</p>
+</div></main>
+</RummyScoreLayout>
