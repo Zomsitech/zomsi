@@ -26,9 +26,9 @@ const socialImage = new URL("/rummyscore-marketing/06-app-promo.webp", "https://
   <meta name="twitter:image" content={socialImage} />
   <title>{title}</title>
   <style>
-    .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
-    .brand-text strong { font-weight: 800; }
-    .brand-text small { font-weight: 600; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.01em; }
+    .brand-text { display: flex; flex-direction: column; line-height: 1.3; }
+    .brand-text strong { font-size: 1.125rem; font-weight: 800; color: var(--text); }
+    .brand-text small { font-size: 0.75rem; font-weight: 400; color: var(--muted); }
     @media (max-width: 720px) {
       .brand-text small { display: none; }
       .nav-actions .button.secondary { display: none; }
@@ -36,7 +36,7 @@ const socialImage = new URL("/rummyscore-marketing/06-app-promo.webp", "https://
     }
     @media (max-width: 420px) {
       img.brand-mark.store { width: 38px; height: 38px; }
-      .brand-text strong { font-size: 0.95rem; }
+      .brand-text strong { font-size: 1rem; }
     }
   </style>
 </head>
