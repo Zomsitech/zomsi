@@ -5,27 +5,33 @@ import "../../styles/rummyscore-marketing.css";
 const steps = [
   {
     number: "01",
-    title: "Start games fast",
-    text: "Create a game in seconds, name the session, and get everyone to the table without setting up a paper score sheet.",
-    screen: "home",
+    title: "Track every game in one place",
+    text: "Dashboard, recent sessions, player roster, and quick actions — everything you need the moment you open the app.",
+    image: "/rummyscore-marketing/01-dashboard.webp",
   },
   {
     number: "02",
-    title: "Set players & rules",
-    text: "Add players and customize the scoring values your group already uses, including target score, drops, wrong show, and full count.",
-    screen: "rules",
+    title: "Start a new game in seconds",
+    text: "Set rules, pick players, and organize the match instantly — no paper score sheet to draw up first.",
+    image: "/rummyscore-marketing/02-new-game.webp",
   },
   {
     number: "03",
-    title: "Score every round",
-    text: "Record each result quickly while Rummy Score keeps running totals and the leaderboard current for everyone.",
-    screen: "round",
+    title: "Score rounds with speed and clarity",
+    text: "Quick score actions, live standings, and a complete-game flow that keeps every player's total current.",
+    image: "/rummyscore-marketing/03-score-round.webp",
   },
   {
     number: "04",
-    title: "Celebrate the winner",
-    text: "Finish with a clear final ranking, then share the result or start another game without rebuilding the scoreboard.",
-    screen: "winner",
+    title: "Invite friends and share instantly",
+    text: "Use invite codes, share links, or a QR code, and keep everyone in sync on the same scoreboard.",
+    image: "/rummyscore-marketing/04-share-invite.webp",
+  },
+  {
+    number: "05",
+    title: "Never lose your rummy history",
+    text: "Review past matches, manage saved players, and plan future game nights — all kept together.",
+    image: "/rummyscore-marketing/05-history-events.webp",
   },
 ];
 
@@ -109,8 +115,8 @@ const features = [
     <section class="rs-story section" id="how-it-works">
       <div class="container rs-section-head rs-section-head-light">
         <span class="rs-kicker">From first deal to final winner</span>
-        <h2>A full game flow in four simple steps.</h2>
-        <p>The sequence below follows the same product story used in the Rummy Score store-submission marketing assets.</p>
+        <h2>See Rummy Score in action.</h2>
+        <p>Real screens from the app — the same flow you'll use from your first game to your fiftieth.</p>
       </div>
 
       <div class="container rs-story-list">
@@ -122,54 +128,7 @@ const features = [
               <p>{step.text}</p>
             </div>
             <div class="rs-marketing-shot">
-              <div class="rs-shot-title">
-                <strong>{step.title}</strong>
-                <span>{index === 0 ? "Create a game in seconds and start scoring." : index === 1 ? "Add players and customize game settings." : index === 2 ? "Fast, simple scoring for every player." : "See final standings at a glance."}</span>
-              </div>
-              <div class={`rs-mini-phone ${step.screen}`}>
-                {step.screen === "home" && (
-                  <>
-                    <div class="rs-mini-head"><b>Rummy Board</b><span>ZOMSITECH</span></div>
-                    <div class="rs-mini-card"><b>Start a New Game</b><p>Configure custom score, drops, wrong shows and rejoining rules.</p><em>New Game</em></div>
-                    <h5>Recent Sessions</h5>
-                    <div class="rs-mini-row"><b>Friday Night Rummy</b><span>In Progress</span></div>
-                    <div class="rs-mini-row"><b>Office Lunch Championship</b><span class="ok">Completed</span></div>
-                  </>
-                )}
-                {step.screen === "rules" && (
-                  <>
-                    <div class="rs-mini-head"><b>← New Game</b></div>
-                    <label>Game Name</label><div class="rs-mini-input">Sunday Rummy</div>
-                    <label>Add Players <span>3 Added</span></label>
-                    <div class="rs-chips"><i>Sonia ×</i><i>Raj ×</i><i>Amit ×</i><i>+ Add Player</i></div>
-                    <label>Game Rules</label>
-                    <div class="rs-rules"><i>Target Score<b>250</b></i><i>Middle Drop<b>50</b></i><i>Wrong Show<b>80</b></i><i>Full Count<b>80</b></i></div>
-                    <em class="rs-start">Start Game</em>
-                  </>
-                )}
-                {step.screen === "round" && (
-                  <>
-                    <div class="rs-mini-round"><span>Round 5</span><b>Sunday Rummy</b><i>4 Players Remaining</i></div>
-                    <div class="rs-mini-tabs">Round Entry　 Leaderboard　 History</div>
-                    <div class="rs-mini-score win"><b>AM　Amit</b><span>140</span></div>
-                    <div class="rs-mini-score"><b>RJ　Raj</b><span>185</span></div>
-                    <div class="rs-mini-score"><b>SN　Sonia</b><span>215</span></div>
-                    <div class="rs-mini-score"><b>KN　Kunal</b><span>95</span></div>
-                    <em class="rs-start">Submit Round</em>
-                  </>
-                )}
-                {step.screen === "winner" && (
-                  <>
-                    <div class="rs-trophy">🏆</div>
-                    <h4>Kunal</h4><strong class="rs-win-label">WINNER!</strong>
-                    <h5>Final Rankings</h5>
-                    <div class="rs-ranking first"><span>1　Kunal</span><b>95 pts</b></div>
-                    <div class="rs-ranking"><span>2　Amit</span><b>140 pts</b></div>
-                    <div class="rs-ranking"><span>3　Raj</span><b>185 pts</b></div>
-                    <em class="rs-start">Play Again</em><em class="rs-share">Share Results</em>
-                  </>
-                )}
-              </div>
+              <img src={step.image} alt={step.title} loading="lazy" width="941" height="1672" />
             </div>
           </article>
         ))}

@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 const { title = "Rummy Score", description = "Rummy Score is a simple scorekeeper for Indian Rummy games with friends and family." } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, "https://zomsi.co").toString();
+const socialImage = new URL("/rummyscore-marketing/06-app-promo.webp", "https://zomsi.co").toString();
 ---
 <!doctype html>
 <html lang="en">
@@ -8,7 +10,20 @@ const { title = "Rummy Score", description = "Rummy Score is a simple scorekeepe
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
   <link rel="icon" type="image/png" href="/icons/rummyscore-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Rummy Score" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={socialImage} />
+  <meta property="og:image:width" content="1254" />
+  <meta property="og:image:height" content="1254" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={socialImage} />
   <title>{title}</title>
 </head>
 <body>
